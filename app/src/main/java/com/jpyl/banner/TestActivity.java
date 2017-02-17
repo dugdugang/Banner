@@ -33,6 +33,8 @@ public class TestActivity extends AppCompatActivity {
         list1.add("3");
         banner.setData(list, list1);
         banner.start();
+        Log.i("M-TAG","mmmmm");
+
     }
 
 //    public void click(View view) {
