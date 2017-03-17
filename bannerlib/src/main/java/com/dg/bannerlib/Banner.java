@@ -88,7 +88,8 @@ public class Banner extends RelativeLayout implements ViewPager.OnPageChangeList
     private void initAdapter() {
         adapter = new MyPageAdapter();
         viewpager.setAdapter(adapter);
-        viewpager.setOnPageChangeListener(this);
+        viewpager.addOnPageChangeListener(this);
+//        viewpager.setOnPageChangeListener(this);
         int middle = Integer.MAX_VALUE / 2 - Integer.MAX_VALUE / 2 % imgs.size();
         viewpager.setCurrentItem(middle);
         indicator.getChildAt(0).setEnabled(true);
